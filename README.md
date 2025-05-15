@@ -47,6 +47,8 @@ Vemos como ya no aparece nuestro usuario en el `prompt` sino el entorno virtual 
 
 ![](images/ad1.png)
 
+![image](https://github.com/user-attachments/assets/cd1481ac-030e-4fa5-8a8d-74e56f3f22b4)
+
 
 3. Instalar Semgrep dentro del entorno virtual que hemos creado:
  
@@ -122,6 +124,7 @@ semgrep --config=auto .
 ```
 ![](images/ad2.png)
 
+
 	`--config=auto`  → Utiliza reglas automáticas recomendadas para detectar vulnerabilidades comunes.
 	`.` → Escanea todo el código dentro del directorio actual.
 
@@ -133,6 +136,9 @@ Esperamos a que se muestren los resultados y vemos cómo nos aparecen 109 proble
 
 ![](images/ad3.png)
 
+
+![image](https://github.com/user-attachments/assets/2a195b81-fe0b-4a04-abfd-3d60b95e39c2)
+
 ### Resultado:
 
 Después de ejecutar el comando, Semgrep mostrará una lista de posibles vulnerabilidades con detalles como:
@@ -143,13 +149,23 @@ Después de ejecutar el comando, Semgrep mostrará una lista de posibles vulnera
 
 ![](images/ad4.png)
 
+![image](https://github.com/user-attachments/assets/0ca315d6-a9a6-478a-a045-084619a71cc6)
+
+
 Si pulsamos el enlace de la regla, nos llevará a la página de <https://sengreo.dev>, donde podemos encontrar información del problema y referencias a él.
 
 ![](images/ad5.png)
 
+![image](https://github.com/user-attachments/assets/8664f838-2ffc-49e8-bbc3-5d7dbaaaec47)
+
+
 En la siguiente captura vemos más detalles:
 
 ![](images/ad6.png)
+
+![image](https://github.com/user-attachments/assets/c3c461f6-c0a5-4c1f-97c1-28a723fd6e44)
+
+
 ---
 
 
@@ -167,6 +183,9 @@ Esto buscará vulnerabilidades basadas en las 10 amenazas más críticas de OWAS
 En esta ocasión vemos que sólo hemos encontrado 44 problemas de esa categoría.
 
 ![](images/ad7.png)
+
+![image](https://github.com/user-attachments/assets/34ab49ee-96df-4aff-98cf-bd1ae7987790)
+
 
 ---
 
@@ -283,12 +302,16 @@ Este repositorio es una prueba de integración de **Semgrep**, una herramienta d
 
 ![](images/ad10.png)
 
+![image](https://github.com/user-attachments/assets/e58f7eb1-e6c5-4f0a-8812-48a6b17eedbf)
+
 
 2. Clónalo en local:
     ```bash
     git clone https://github.com/tu-usuario/semgrep-prueba.git
     cd semgrep-prueba
     ```
+
+    
 3.  📁 Crea la estructura de carpetas:
     ```bash
     mkdir -p .github/workflows
@@ -320,6 +343,9 @@ def main():
 if __name__ == "__main__":
     main()
 ```
+
+![image](https://github.com/user-attachments/assets/adc44cb9-93cd-43a0-9970-c44c886a128b)
+
 
 ---
 4. ⚙️  Añade el workflow 
@@ -369,6 +395,9 @@ jobs:
 ```
 
 
+![image](https://github.com/user-attachments/assets/55442e46-3ece-4d4e-ba35-ed282e646641)
+
+
 - Al hacer `push` sobre ramas `main` y `develop` se desencadena la ejecuciónn que indicamos.
 - Pasos que hacemos:
 	- Instalamos `semgrep` con `pip` (por si no estuviera instalado).
@@ -387,6 +416,9 @@ El análisis estático de Semgrep debería ejecutarse automáticamente en cada `
 
 ![](images/ad11.png)
 
+![image](https://github.com/user-attachments/assets/813970e3-0ab9-4d2a-8ab1-09fc3073ede6)
+
+
 ---
 
 ### ✅ Resultado esperado
@@ -395,13 +427,21 @@ Alli encontraremos el resultado de la ejecución de `semgrep`.
 
 ![](images/ad12.png)
 
+![image](https://github.com/user-attachments/assets/68d3c290-f35c-4390-b04f-ddf0ad3f595c)
+
+
 Y podemos descargar el archivo .json con información sobre el resultado.
 
 ![](images/ad13.png)
 
+![image](https://github.com/user-attachments/assets/d7de3e0b-5c91-4fda-923a-b5b574368886)
+
+
 Abajo podemos ver la información sobre el problema introducido por el uso de `eval()`
 
 ![](images/ad14.png)
+
+![image](https://github.com/user-attachments/assets/71dafa32-9e6d-4b56-b5f2-e7b2890cb0b1)
 
 
 
