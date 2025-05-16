@@ -443,6 +443,7 @@ Abajo podemos ver la información sobre el problema introducido por el uso de `e
 
 ![image](https://github.com/user-attachments/assets/71dafa32-9e6d-4b56-b5f2-e7b2890cb0b1)
 
+![image](https://github.com/user-attachments/assets/3779bf56-584f-46b1-97ad-3fafe26a1e1a)
 
 
 ## Crear reglas personalizadas
@@ -462,6 +463,9 @@ rules:
       - python
 
 ```
+
+![image](https://github.com/user-attachments/assets/b99a1a51-8f81-4260-b3b5-abd793108cd7)
+
 
 Explicación:
 **pattern**: **eval(...)** → Detecta cualquier uso de `eval()`.
@@ -484,6 +488,7 @@ Como vemos nos aparece el aviso indicado en la regla.
 
 ![](images/ad15.png)
 
+![image](https://github.com/user-attachments/assets/66e89811-b498-4731-9071-277775f02768)
 
 ---
 
@@ -504,15 +509,24 @@ por
     - semgrep --config=files/custom-rules.yaml  --json --output=semgrep-results.json
 ```
 
+![image](https://github.com/user-attachments/assets/e4dce494-540e-4f8a-be0b-9fa35470e882)
+
+
 Al hacer un `git push` podemos ver como se ejecuta automáticament el `workflow`
 
 
 ![](images/ad16.png)
 
+![image](https://github.com/user-attachments/assets/15db8792-06ef-4d0a-b350-dc68b7575f5d)
+
+
+
 Si accedemos a los detalles y descargamos el archivo `semgrep-report` con el resultado en formato `JSON`, podemos ver el resultado de la ejecución:
 
 ![](images/ad17.png)
 
+
+![image](https://github.com/user-attachments/assets/22f11e25-6fd5-439a-b9a9-e4cfd752a116)
 
 
 
